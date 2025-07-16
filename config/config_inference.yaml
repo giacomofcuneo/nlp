@@ -2,6 +2,6 @@
 
 model_id: distilbert-base-uncased
 num_labels: 2
-weights_path: ./output/checkpoint_140.pt  # Path to your fine-tuned weights
+weights_path: ./output/checkpoint_160.pt  # Path to your fine-tuned weights
 max_length: 128
 device: auto

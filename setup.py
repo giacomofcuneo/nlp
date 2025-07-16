@@ -3,8 +3,11 @@ from setuptools import setup, find_packages
 setup(
     name='data4allnlp',
     version='0.1.0',
-    author='Data4All Team',
+    author='Giacomo Figueroa Cuneo',
     description='A nlp package for Data4All projects',
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/giacomofcuneo/nlp"
     packages=find_packages(where='src'),
     package_dir={'': 'src'},
     install_requires=[
