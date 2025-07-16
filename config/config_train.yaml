@@ -1,0 +1,27 @@
+# Example YAML config for sentiment analysis training
+
+dataset_name: imdb
+train_split: train
+val_split: test
+n_per_class: 200
+n_per_class_val: 40
+model_id: distilbert-base-uncased
+num_labels: 2
+max_length: 128
+batch_size: 8
+loss_name: cross_entropy
+optimizer_name: adamw
+lr: 0.00005
+use_scheduler: false
+scheduler_name: steplr
+step_size: 2
+gamma: 0.8
+use_early_stopping: true
+early_stopping_patience: 10
+early_stopping_min_delta: 0.01
+device: auto
+output_dir: ./output
+save_every: 20
+log_every: 5
+validate_every: 10
+max_epochs: 4

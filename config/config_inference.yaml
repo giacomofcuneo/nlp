@@ -1,0 +1,7 @@
+# Example YAML config for sentiment analysis inference
+
+model_id: distilbert-base-uncased
+num_labels: 2
+weights_path: ./output/checkpoint_140.pt  # Path to your fine-tuned weights
+max_length: 128
+device: auto
